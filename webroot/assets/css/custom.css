@@ -1,0 +1,12 @@
+.sticky-submit-btn {
+    right: 0;
+    z-index: 5;
+}
+
+.footer:not(.navbar-fixed-bottom) {
+    z-index: 1000;
+}
+
+.datepicker {
+    z-index: 1500 !important;
+}

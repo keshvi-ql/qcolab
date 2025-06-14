@@ -1,0 +1,16 @@
+Main Functionalities (Modules):-
+
+User Management
+Roles & Permissions
+Leads & Clients
+Projects & Bids
+Announcements & Holidays
+Leave Applications & Types
+Payroll
+Settings & Technologies
+Time Tracking
+Notifications
+Email Templates
+Dashboard (overview)
+File Management
+Access Control

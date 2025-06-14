@@ -1,0 +1,176 @@
+2024-08-29 06:28:38 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qcolab.settings' doesn't exist in C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 158
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qcolab.settings' doesn't exist in C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:282
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:251
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:156
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:116
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:544
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ModelCommand.php:116
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ModelCommand.php:99
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-08-30 05:18:20 warning: Array to string conversion
+Trace:
+App\Command\InsertUserRoleCommand->execute() C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 192
+Cake\Console\BaseCommand->run() C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 327
+Cake\Console\CommandRunner->runCommand() C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 168
+Cake\Console\CommandRunner->run() C:\wamp64\www\qcolab\bin\cake.php, line 10
+[main]
+
+2024-08-30 05:24:46 error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '6' for key 'role_id' in C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:298
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:263
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:263
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Query.php:222
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:2181
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:2074
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1969
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1600
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:632
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1600
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1970
+- C:\wamp64\www\qcolab\src\Command\InsertUserRoleCommand.php:93
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-08-30 05:26:20 error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'role_id' in C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:298
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:263
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:263
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Query.php:222
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:2181
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:2074
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1969
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1600
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:632
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1600
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1970
+- C:\wamp64\www\qcolab\src\Command\InsertUserRoleCommand.php:93
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-08-30 05:32:48 error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'role_id' in C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php on line 159
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Statement\Statement.php:159
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:313
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Driver.php:298
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:263
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:71
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:263
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Query.php:222
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:2181
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:2074
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1969
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1600
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Database\Connection.php:632
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1600
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\ORM\Table.php:1970
+- C:\wamp64\www\qcolab\src\Command\InsertUserRoleCommand.php:93
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-10-18 10:33:30 error: [Exception] The request object does not contain the required `authentication` attribute. Verify the AuthenticationMiddleware has been added. in C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 151
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:240
+- C:\wamp64\www\qcolab\src\Controller\AppController.php:58
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Controller\Controller.php:233
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:344
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:251
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-10-22 06:52:22 error: [Exception] The request object does not contain the required `authentication` attribute. Verify the AuthenticationMiddleware has been added. in C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 151
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:240
+- C:\wamp64\www\qcolab\src\Controller\AppController.php:58
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Controller\Controller.php:233
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:344
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:251
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-10-22 10:10:07 error: [Exception] The request object does not contain the required `authentication` attribute. Verify the AuthenticationMiddleware has been added. in C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 151
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:240
+- C:\wamp64\www\qcolab\src\Controller\AppController.php:58
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Controller\Controller.php:233
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:344
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:251
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
+2024-10-29 03:48:31 error: [Exception] The request object does not contain the required `authentication` attribute. Verify the AuthenticationMiddleware has been added. in C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php on line 151
+Stack Trace:
+- C:\wamp64\www\qcolab\vendor\cakephp\authentication\src\Controller\Component\AuthenticationComponent.php:240
+- C:\wamp64\www\qcolab\src\Controller\AppController.php:58
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Controller\Controller.php:233
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:344
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:251
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\TestCommand.php:126
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:207
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:154
+- C:\wamp64\www\qcolab\vendor\cakephp\bake\src\Command\ControllerCommand.php:64
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\BaseCommand.php:192
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:327
+- C:\wamp64\www\qcolab\vendor\cakephp\cakephp\src\Console\CommandRunner.php:168
+- C:\wamp64\www\qcolab\bin\cake.php:10
+- [main]:
+
